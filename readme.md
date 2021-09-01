@@ -2,13 +2,13 @@
 
 - プロジェクトの作成
 > 作業用ディレクトリに移動し、以下のコマンドを実行し、プロジェクトを作成  
-> 以下はトラハックさんが使ってるコマンド
+> 以下はトラハックさんが使ってるコマンド  
 `npx create-next-app nextjs-blog --use-npm --example "https://github.com/vercel/next-learn-starter/tree/master/dynamic-routes-starter"`
 
-> 以下はドキュメントに記載のコマンドでプロジェクト作成(なぜかeslintが入ってない)
+> 以下はドキュメントに記載のコマンドでプロジェクト作成(なぜかeslintが入ってない)  
 `npx create-next-app nextjs-blog --use-npm --example "https://github.com/vercel/next-learn-starter/tree/master/learn-starter"`
 
-> 以下はyarnコマンドでのプロジェクト作成    
+> 以下はyarnコマンドでのプロジェクト作成   
 `yarn create next-app --typescript`
 
 - TypeScript環境構築
