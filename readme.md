@@ -1,7 +1,7 @@
 # tsconfigとwebpackの設定
 
 # next.jsの環境構築
-- 虎ハックさんのgit hubリンク
+- 虎ハックさんの githubリンク
 `https://github.com/deatiger/ts-basic-demo/tree/bug-husky-not-working`
 
 > 作業用フォルダにを作成  
@@ -34,14 +34,14 @@ module.exports = {
     bundle: './src/index.ts'
   },
   output: {
-    path: path.join(_dirname, 'dist'),
-    flename: '[name].js'
+    path: path.join(__dirname, 'dist'),
+    filename: '[name].js'
   },
   resolve: {
     extensions: ['.ts', '.js']
   },
   devServer: {
-    contentBase: path.join(_dirname, 'dist'),
+    contentBase: path.join(__dirname, 'dist'),
     open: true
   },
   module: {
@@ -65,7 +65,7 @@ module.exports = {
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1", //ここを消す
     "build": "webpack --mode=production", //追加
-    "start": "webpack-cil serve --mode development" //追加
+    "start": "webpack-cli serve --mode development" //追加
   },
   "author": "",
   "license": "ISC",
@@ -88,8 +88,17 @@ module.exports = {
 `npm i typescript -g`
 > 再度`tsc --init`を実行  
 
-> tsconfigの基本的な設定
+> tsconfigの基本的な設定  
 <!-- tsconfigの写真 -->
+
+
+# tsconfigの便利な設定
+- baseUrl
+> import時srcディレクトリからの絶対パスで指定できる  
+ `"baseUrl": "./src",`  
+
+
+
 
 ------------------------------------------------------------------
 - プロジェクトの作成方法
